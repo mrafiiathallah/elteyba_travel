@@ -84,7 +84,7 @@ const Confirmation = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <Link 
-            to="/"
+            to="/elteyba_travel"
             className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md transition duration-300 mr-4"
           >
             Return to Home

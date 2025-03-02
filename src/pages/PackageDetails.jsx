@@ -82,19 +82,19 @@ const packages = [
     type: 'umrah',
     reviews: [
       {
-        name: 'Ahmed Khan',
+        name: 'Fauzan Kamil',
         rating: 4,
         comment: 'Great package for the price. The hotels were clean and conveniently located. The guide was knowledgeable and helpful.',
         date: 'March 2023'
       },
       {
-        name: 'Fatima Ali',
+        name: 'M Rafi Athallah',
         rating: 5,
         comment: 'Excellent service from start to finish. The staff was very accommodating and made our Umrah journey smooth and comfortable.',
         date: 'January 2023'
       },
       {
-        name: 'Mohammed Rahman',
+        name: 'Wahyu Nata Mahendra',
         rating: 4,
         comment: 'Good value for money. The accommodation was decent, and the transportation was always on time. Would recommend for budget travelers.',
         date: 'December 2022'
@@ -200,19 +200,19 @@ const packages = [
     type: 'umrah',
     reviews: [
       {
-        name: 'Ibrahim Khan',
+        name: 'Fauzan Kamil',
         rating: 5,
         comment: 'Excellent package! The 4-star hotels were very comfortable and close to the Haram. The private transportation made our journey smooth, and the guides were knowledgeable and helpful.',
         date: 'February 2023'
       },
       {
-        name: 'Aisha Patel',
+        name: 'M Rafi Athallah',
         rating: 4,
         comment: 'Great experience overall. The accommodation was comfortable, and the full board meals were good. The only improvement could be more variety in the food.',
         date: 'April 2023'
       },
       {
-        name: 'Yusuf Ahmed',
+        name: 'Wahyu Nata Mahendra',
         rating: 5,
         comment: 'Highly recommend this package. The service was exceptional, and the guides provided valuable insights about the historical sites. The hotels were clean and well-located.',
         date: 'March 2023'
@@ -318,19 +318,19 @@ const packages = [
     type: 'umrah',
     reviews: [
       {
-        name: 'Zainab Hussein',
+        name: 'Fauzan Kamil',
         rating: 5,
         comment: 'The luxury package was worth every penny. The 5-star hotels were exceptional, and the VIP transportation made our journey comfortable. The private guide was knowledgeable and attentive to our needs.',
         date: 'April 2023'
       },
       {
-        name: 'Omar Siddiqui',
+        name: 'M Rafi Athallah',
         rating: 5,
         comment: 'Exceptional service from start to finish. The business class flights, luxury accommodations, and gourmet meals made our Umrah journey truly special. Highly recommend for those seeking a premium experience.',
         date: 'March 2023'
       },
       {
-        name: 'Layla Mohammed',
+        name: 'Wahyu Nata Mahendra',
         rating: 5,
         comment: 'I traveled with my elderly parents, and the staff was incredibly accommodating to their needs. The luxury accommodations and VIP transportation made the journey comfortable for them. The spiritual guidance provided by the scholars was enlightening.',
         date: 'February 2023'
@@ -473,19 +473,19 @@ const packages = [
     type: 'hajj',
     reviews: [
       {
-        name: 'Ahmed Khan',
+        name: 'Fauzan Kamil',
         rating: 4,
         comment: 'Good package for the price. The accommodation was decent, and the guides were knowledgeable. The transportation during Hajj rituals was well-organized.',
         date: 'August 2023'
       },
       {
-        name: 'Fatima Ali',
+        name: 'M Rafi Athallah',
         rating: 5,
         comment: 'Excellent service throughout the Hajj journey. The staff was very helpful, and the guides provided valuable insights about the rituals. The tent accommodation in Mina was basic but comfortable.',
         date: 'August 2023'
       },
       {
-        name: 'Mohammed Rahman',
+        name: 'Wahyu Nata Mahendra',
         rating: 4,
         comment: 'Overall, a good experience. The accommodation was as expected for a standard package. The meals were decent, and the transportation was reliable. The guides were knowledgeable and patient.',
         date: 'August 2022'
@@ -530,19 +530,19 @@ const packages = [
     type: 'hajj',
     reviews: [
       {
-        name: 'Ibrahim Khan',
+        name: 'Fauzan Kamil',
         rating: 5,
         comment: 'Excellent package! The 4-star hotels were very comfortable, and the upgraded tent accommodation in Mina was a significant improvement. The air-conditioned transportation made the journey much more comfortable in the hot weather.',
         date: 'August 2023'
       },
       {
-        name: 'Aisha Patel',
+        name: 'M Rafi Athallah',
         rating: 4,
         comment: 'Great experience overall. The accommodation was comfortable, and the buffet meals were good. The guides were knowledgeable and helpful. The only improvement could be more variety in the food.',
         date: 'August 2023'
       },
       {
-        name: 'Yusuf Ahmed',
+        name: 'Wahyu Nata Mahendra',
         rating: 5,
         comment: 'Highly recommend this package. The service was exceptional, and the guides provided valuable insights about the rituals. The hotels were clean and well-located, and the tent accommodation in Mina was comfortable.',
         date: 'August 2022'
@@ -588,19 +588,19 @@ const packages = [
     type: 'hajj',
     reviews: [
       {
-        name: 'Zainab Hussein',
+        name: 'Fauzan Kamil',
         rating: 5,
         comment: 'The VIP package was worth every penny. The 5-star hotels were exceptional, and the premium tents in Mina were very comfortable. The private transportation and VIP access during rituals made the Hajj journey much smoother.',
         date: 'August 2023'
       },
       {
-        name: 'Omar Siddiqui',
+        name: 'M Rafi Athallah',
         rating: 5,
         comment: 'Exceptional service from start to finish. The business class flights, luxury accommodations, and gourmet meals made our Hajj journey truly special. The personal guide and assistant were always available to help with any needs.',
         date: 'August 2023'
       },
       {
-        name: 'Layla Mohammed',
+        name: 'Wahyu Nata Mahendra',
         rating: 5,
         comment: 'I traveled with my elderly parents, and the staff was incredibly accommodating to their needs. The luxury accommodations and private transportation made the journey comfortable for them. The VIP access during rituals was particularly helpful for my parents.',
         date: 'August 2022'
