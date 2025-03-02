@@ -1,10 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -15,7 +28,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav 
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolling ? "bg-gray-500 shadow-md" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -27,44 +44,44 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink 
               to="/elteyba_travel" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/elteyba_travel') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/elteyba_travel') ? 'active-nav-link font-medium' : ''}`}
             >
               Home
             </NavLink>
             <NavLink 
               to="/destinations" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/destinations') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/destinations') ? 'active-nav-link font-medium' : ''}`}
             >
               Destinations
             </NavLink>
             <NavLink 
               to="/packages" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/packages') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/packages') ? 'active-nav-link font-medium' : ''}`}
             >
               Hajj & Umrah Packages
             </NavLink>
             {/* <NavLink 
               to="/pricing" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/pricing') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/pricing') ? 'active-nav-link font-medium' : ''}`}
             >
               Pricing
             </NavLink> */}
             <NavLink 
               to="/testimonials" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/testimonials') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/testimonials') ? 'active-nav-link font-medium' : ''}`}
             >
               Testimonials
             </NavLink>
             <NavLink 
               to="/contact" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/contact') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link text-white hover:text-primary ${isActive('/contact') ? 'active-nav-link font-medium' : ''}`}
             >
               Contact Us
             </NavLink>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login" className="text-gray-700 hover:text-primary">
+            <Link to="/login" className="text-white hover:text-primary">
               Login
             </Link>
             <Link 

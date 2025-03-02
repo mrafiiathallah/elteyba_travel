@@ -58,8 +58,9 @@ const Home = () => {
     <div>
       <Banner 
         image="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-        title="Perjalanan Ke Tanah Suci"
-        subtitle="Layanan Terbaik dan pengalaman Tak Terlupakan"
+        title="Nikmati Tour Terbaik Bersama Kami"
+        subtitle="Perjalanan ke Tanah Suci"
+        description="Layanan Terbaik dan Pengalaman Tak Terlupakan"
       />
       
       <section className="py-16 bg-light">
