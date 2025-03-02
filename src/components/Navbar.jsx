@@ -26,8 +26,8 @@ const Navbar = () => {
           
           <div className="hidden md:flex items-center space-x-8">
             <NavLink 
-              to="/" 
-              className={`nav-link text-gray-700 hover:text-primary ${isActive('/') ? 'active-nav-link font-medium' : ''}`}
+              to="/elteyba_travel" 
+              className={`nav-link text-gray-700 hover:text-primary ${isActive('/elteyba_travel') ? 'active-nav-link font-medium' : ''}`}
             >
               Home
             </NavLink>
@@ -91,8 +91,8 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
             <NavLink 
-              to="/" 
-              className={`block px-3 py-2 rounded-md ${isActive('/') ? 'bg-primary/10 text-primary font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
+              to="/elteyba_travel" 
+              className={`block px-3 py-2 rounded-md ${isActive('/elteyba_travel') ? 'bg-primary/10 text-primary font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
               onClick={toggleMenu}
             >
               Home
