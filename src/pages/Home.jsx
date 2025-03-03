@@ -55,7 +55,7 @@ const features = [
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Banner 
         image="https://images.unsplash.com/photo-1588513646744-e94675143d6f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="Nikmati Tour Terbaik Bersama Kami"
