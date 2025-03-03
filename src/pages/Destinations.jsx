@@ -64,9 +64,10 @@ const Destinations = () => {
   return (
     <div>
       <Banner 
-        image="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-        title="Explore Sacred Destinations"
-        subtitle="Discover the holy cities and historical sites"
+        image="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Jelajahi Destinasi Impian Anda"
+        subtitle="Temukan Keindahan di Setiap Langkah"
+        description=" Dari tempat-tempat suci hingga lokasi eksotis, kami menghadirkan pengalaman perjalanan yang tak terlupakan dengan layanan terbaik untuk kenyamanan Anda."
       />
       
       <section className="py-16 bg-light">

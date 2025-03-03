@@ -57,7 +57,7 @@ const Home = () => {
   return (
     <div>
       <Banner 
-        image="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+        image="https://images.unsplash.com/photo-1588513646744-e94675143d6f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         title="Nikmati Tour Terbaik Bersama Kami"
         subtitle="Perjalanan ke Tanah Suci"
         description="Layanan Terbaik dan Pengalaman Tak Terlupakan"
