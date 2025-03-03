@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolling ? "bg-gray-400 shadow-md" : "bg-transparent"
+        scrolling ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,19 +44,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <NavLink 
               to="/elteyba_travel" 
-              className={`nav-link text-white ${isActive('/elteyba_travel') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/elteyba_travel') ? 'active-nav-link font-medium' : ''}`}
             >
               Home
             </NavLink>
             <NavLink 
               to="/destinations" 
-              className={`nav-link text-white ${isActive('/destinations') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/destinations') ? 'active-nav-link font-medium' : ''}`}
             >
               Destinations
             </NavLink>
             <NavLink 
               to="/packages" 
-              className={`nav-link text-white ${isActive('/packages') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/packages') ? 'active-nav-link font-medium' : ''}`}
             >
               Hajj & Umrah Packages
             </NavLink>
@@ -68,20 +74,26 @@ const Navbar = () => {
             </NavLink> */}
             <NavLink 
               to="/testimonials" 
-              className={`nav-link text-white ${isActive('/testimonials') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/testimonials') ? 'active-nav-link font-medium' : ''}`}
             >
               Testimonials
             </NavLink>
             <NavLink 
               to="/contact" 
-              className={`nav-link text-white ${isActive('/contact') ? 'active-nav-link font-medium' : ''}`}
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/contact') ? 'active-nav-link font-medium' : ''}`}
             >
               Contact Us
             </NavLink>
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/login" className="text-white font-semibold hover:text-accent transform duration-300">
+            <Link to="/login" className={`font-semibold transform duration-300 ${
+                scrolling ? "text-black" : "text-white"
+              } hover:text-accent`}>
               Login
             </Link>
             <Link 
