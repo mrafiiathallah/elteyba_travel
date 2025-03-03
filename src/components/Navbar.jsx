@@ -1,23 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const [scrolling, setScrolling] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -82,7 +69,7 @@ const Navbar = () => {
             </Link>
             <Link 
               to="/signup" 
-              className="bg-accent hover:bg-accent/90 text-white px-4 py-2 rounded-md transition duration-300"
+              className="border-transparent border-2 bg-accent hover:bg-white hover:text-accent hover:border-accent text-white font-semibold px-8 py-2 rounded-3xl transition duration-500"
             >
               Sign Up
             </Link>

@@ -90,9 +90,10 @@ const Testimonials = () => {
   return (
     <div>
       <Banner 
-        image="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-        title="Pilgrim Testimonials"
-        subtitle="Hear from those who have journeyed with us"
+        image="https://images.unsplash.com/photo-1572252009286-268acec5ca0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Cerita Perjalanan yang Menginspirasi"
+        subtitle="Dengarkan Pengalaman Mereka Bersama Kami"
+        description="Temukan bagaimana layanan kami membuat perjalanan mereka lebih nyaman, aman, dan berkesan."
       />
       
       <section className="py-16 bg-light">

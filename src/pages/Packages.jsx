@@ -138,9 +138,10 @@ const Packages = () => {
   return (
     <div>
       <Banner 
-        image="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
-        title="Hajj & Umrah Packages"
-        subtitle="Choose the perfect package for your spiritual journey"
+        image="https://images.unsplash.com/photo-1551041777-575d3855ca71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="Perjalanan Ibadah yang Nyaman & Berkah"
+        subtitle="Layanan Eksklusif untuk Ibadah yang Khusyuk"
+        description="Kami menyediakan paket Haji & Umrah dengan fasilitas terbaik, bimbingan profesional, dan pengalaman spiritual yang mendalam."
       />
       
       <section className="py-16 bg-light">

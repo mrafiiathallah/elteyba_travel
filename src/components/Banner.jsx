@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const Banner = ({ image, title, subtitle, description }) => {
   return (
     <div 
-      className="banner relative min-w-full h-[670px] flex items-center justify-center overflow-hidden"
+      className="banner relative min-w-full h-[500px] flex items-center justify-center overflow-hidden"
       style={{ 
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
       }}
