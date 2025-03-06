@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { FaUser, FaPassport, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-const BookingForm = ({ packageId, packageName, price }) => {
+const PackageBookingForm = ({ packageId, packageName, price }) => {
   const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
+    // Contact Details
     firstName: '',
     lastName: '',
     email: '',
@@ -11,10 +15,14 @@ const BookingForm = ({ packageId, packageName, price }) => {
     address: '',
     city: '',
     country: '',
-    passportNumber: '',
+    
+    // Package Details
     travelDate: '',
     adults: 1,
     children: 0,
+    passportNumber: '',
+    
+    // Payment
     paymentMethod: 'credit-card'
   });
   
@@ -38,8 +46,6 @@ const BookingForm = ({ packageId, packageName, price }) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    // In a real application, you would process the payment and save the booking
-    // For this demo, we'll just navigate to the confirmation page
     navigate('/confirmation', { 
       state: { 
         bookingData: {
@@ -48,7 +54,8 @@ const BookingForm = ({ packageId, packageName, price }) => {
           packageName,
           price,
           bookingDate: new Date().toISOString(),
-          bookingId: `BK${Math.floor(Math.random() * 1000000)}`
+          bookingId: `BK${Math.floor(Math.random() * 1000000)}`,
+          type: 'package'
         } 
       } 
     });
@@ -109,38 +116,47 @@ const BookingForm = ({ packageId, packageName, price }) => {
             
             <div>
               <label className="block text-gray-700 mb-1">Email</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                required
-              />
+              <div className="relative">
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+                <FaEnvelope className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              </div>
             </div>
             
             <div>
               <label className="block text-gray-700 mb-1">Phone</label>
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                required
-              />
+              <div className="relative">
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+                <FaPhone className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              </div>
             </div>
             
             <div>
               <label className="block text-gray-700 mb-1">Address</label>
-              <input
-                type="text"
-                name="address"
-                value={formData.address}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                required
-              />
+              <div className="relative">
+                <input
+                  type="text"
+                  name="address"
+                  value={formData.address}
+                  onChange={handleChange}
+                  className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+                <FaMapMarkerAlt className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -183,18 +199,6 @@ const BookingForm = ({ packageId, packageName, price }) => {
         {step === 2 && (
           <div className="space-y-4">
             <div>
-              <label className="block text-gray-700 mb-1">Passport Number</label>
-              <input
-                type="text"
-                name="passportNumber"
-                value={formData.passportNumber}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                required
-              />
-            </div>
-            
-            <div>
               <label className="block text-gray-700 mb-1">Travel Date</label>
               <input
                 type="date"
@@ -229,6 +233,21 @@ const BookingForm = ({ packageId, packageName, price }) => {
                   onChange={handleChange}
                   className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
+              </div>
+            </div>
+            
+            <div>
+              <label className="block text-gray-700 mb-1">Passport Number</label>
+              <div className="relative">
+                <input
+                  type="text"
+                  name="passportNumber"
+                  value={formData.passportNumber}
+                  onChange={handleChange}
+                  className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+                <FaPassport className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
               </div>
             </div>
             
@@ -377,4 +396,4 @@ const BookingForm = ({ packageId, packageName, price }) => {
   );
 };
 
-export default BookingForm;
+export default PackageBookingForm;

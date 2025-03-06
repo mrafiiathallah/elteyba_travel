@@ -59,6 +59,22 @@ const Navbar = () => {
               Destinations
             </NavLink>
             <NavLink 
+              to="/flights" 
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/flights') ? 'active-nav-link font-medium' : ''}`}
+            >
+              Flights
+            </NavLink>
+            <NavLink 
+              to="/hotels" 
+              className={`nav-link ${
+                scrolling ? "text-black" : "text-white"
+              } ${isActive('/hotels') ? 'active-nav-link font-medium' : ''}`}
+            >
+              Hotels
+            </NavLink>
+            <NavLink 
               to="/packages" 
               className={`nav-link ${
                 scrolling ? "text-black" : "text-white"
@@ -132,6 +148,20 @@ const Navbar = () => {
               onClick={toggleMenu}
             >
               Destinations
+            </NavLink>
+            <NavLink 
+              to="/flights" 
+              className={`block px-3 py-2 rounded-md ${isActive('/flights') ? 'bg-primary/10 text-primary font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
+              onClick={toggleMenu}
+            >
+              Flights
+            </NavLink>
+            <NavLink 
+              to="/hotels" 
+              className={`block px-3 py-2 rounded-md ${isActive('/hotels') ? 'bg-primary/10 text-primary font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
+              onClick={toggleMenu}
+            >
+              Hotels
             </NavLink>
             <NavLink 
               to="/packages" 

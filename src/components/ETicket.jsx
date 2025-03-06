@@ -63,8 +63,8 @@ const ETicket = ({ bookingData }) => {
       <div id="e-ticket" ref={ticketRef} className="border rounded-lg p-6">
         <div className="flex justify-between items-center border-b border-gray-300 pb-4 mb-6">
           <div>
-            <h3 className="text-2xl font-bold text-primary">Elteyba</h3>
-            <p className="text-gray-600">Perjalanan Ke Tanah Suci</p>
+            <h3 className="text-2xl font-bold text-primary">HajjUmrah</h3>
+            <p className="text-gray-600">Your Journey to the Holy Land</p>
           </div>
           <div className="text-right">
             <p className="text-sm text-gray-600">Booking ID</p>
