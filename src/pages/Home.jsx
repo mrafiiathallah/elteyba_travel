@@ -108,7 +108,7 @@ const Home = () => {
           <div className="text-center mt-10">
             <Link 
               to="/packages"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md transition duration-300"
+              className="inline-block border-2 border-transparent bg-primary text-white hover:bg-white hover:text-primary hover:border-primary font-semibold px-8 py-3 rounded-3xl transition duration-500"
             >
               View All Packages
             </Link>
@@ -289,7 +289,7 @@ const Home = () => {
           <div className="text-center mt-10">
             <Link 
               to="/testimonials"
-              className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md transition duration-300"
+              className="inline-block border-2 border-transparent bg-primary text-white hover:bg-white hover:text-primary hover:border-primary font-semibold px-8 py-3 rounded-3xl transition duration-500"
             >
               Read More Testimonials
             </Link>
