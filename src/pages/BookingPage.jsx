@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Banner from '../components/Banner';
-import BookingForm from '../components/BookingForm';
+import PackageBookingForm from '../components/PackageBookingForm';
 
 const packages = [
   {
@@ -72,7 +72,7 @@ const BookingPage = () => {
       
       <section className="py-16 bg-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <BookingForm 
+          <PackageBookingForm 
             packageId={packageData.id}
             packageName={packageData.name}
             price={packageData.price}
