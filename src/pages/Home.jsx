@@ -143,7 +143,7 @@ const Home = () => {
             {features.map((feature, index) => (
               <motion.div 
                 key={index}
-                className="bg-light rounded-lg p-6 text-center"
+                className="bg-light rounded-2xl p-6 text-center"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
@@ -174,13 +174,13 @@ const Home = () => {
               <div className="flex space-x-4">
                 <Link 
                   to="/packages"
-                  className="bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md transition duration-300"
+                  className="font-semibold rounded-2xl border-2 border-transparent bg-white text-primary hover:bg-primary hover:text-white hover:border-white px-6 py-3 transition duration-300"
                 >
                   Explore Packages
                 </Link>
                 <Link 
                   to="/contact"
-                  className="bg-transparent border border-white hover:bg-white/10 text-white px-6 py-3 rounded-md transition duration-300"
+                  className="font-semibold rounded-2xl border-2 border-transparent bg-transparent border-white hover:bg-white hover:text-primary text-white px-6 py-3 transition duration-300"
                 >
                   Contact Us
                 </Link>
@@ -197,7 +197,7 @@ const Home = () => {
               <img 
                 src="https://s3-alpha-sig.figma.com/img/5afa/e533/9dec23d50df5f10581f16d6063c2e3c8?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AEFqla~3uO5C85NQXB2336HxWQCOHYGW6jCo3C-ciLjutSfVak4h~gpku5fp9cc~BAiUk4bGWe8B13V1QqN01uJizzeEHWsnCFBvsTrcqAWqSjcZbW1scEgLZQ0TSxQW-7Hs9sjFdXuPqb~4OsY4dGKMejDZO8UfT1NP034Fpfaa93Tfms5HDWRLL2Oqulu-4hzFzv-isk1zu431iCgbkYnSgmkwnuP6u55EVdMBAQ1tEfuHCV5RA-vd3x~095qQwrBh1noC0E7bWvJ5r5c~0WIhprmdeW0Eu5pDyQKP6DfXIdfsmJx2GwsYwQOLN8NSGYxwDGOt2vx4h4Qv-8qyTQ__" 
                 alt="Kaaba" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-xl"
               />
             </motion.div>
           </div>
@@ -229,7 +229,7 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div 
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-2xl shadow-md"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -248,7 +248,7 @@ const Home = () => {
             </motion.div>
             
             <motion.div 
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-2xl shadow-md"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -267,7 +267,7 @@ const Home = () => {
             </motion.div>
             
             <motion.div 
-              className="bg-white p-6 rounded-lg shadow-md"
+              className="bg-white p-6 rounded-2xl shadow-md"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

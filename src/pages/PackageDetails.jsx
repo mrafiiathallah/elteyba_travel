@@ -11,7 +11,7 @@ const packages = [
     price: 1200,
     duration: '10 days',
     rating: 4.2,
-    image: 'https://images.unsplash.com/photo-1604026290925-43e3eb1a4c7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+    image: 'https://images.unsplash.com/photo-1575101261474-5cb5653bb416?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Economy class flights',
       '3-star hotel accommodation',
@@ -345,7 +345,7 @@ const packages = [
     price: 6500,
     duration: '21 days',
     rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+    image: 'https://images.unsplash.com/photo-1565552645632-d725f8bfc19a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Economy class flights',
       '3-star hotel accommodation',
@@ -500,7 +500,7 @@ const packages = [
     price: 9000,
     duration: '25 days',
     rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1565019011521-b0575cbb57c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+    image: 'https://images.unsplash.com/photo-1633546707050-88e2b545831c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Premium economy flights',
       '4-star hotel accommodation',
@@ -557,7 +557,7 @@ const packages = [
     price: 15000,
     duration: '28 days',
     rating: 5.0,
-    image: 'https://images.unsplash.com/photo-1604026290925-43e3eb1a4c7a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+    image: 'https://images.unsplash.com/photo-1572358899655-f63ece97bfa5?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     includes: [
       'Business class flights',
       '5-star hotel accommodation near Haram',
