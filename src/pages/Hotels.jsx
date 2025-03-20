@@ -13,13 +13,13 @@ const Hotels = () => {
     <div>
       <div className="relative min-h-[500px] bg-gradient-to-r from-blue-900 to-blue-700">
         <div className="absolute inset-0 bg-black/30"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Find Your Perfect Stay</h1>
             <p className="text-xl text-white/90">Book comfortable accommodations near holy sites</p>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-6">
+          <div className="bg-white rounded-2xl shadow-xl p-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
               <div className="relative">
                 <label className="block text-sm font-medium text-gray-700 mb-1">Destination</label>
@@ -27,7 +27,7 @@ const Hotels = () => {
                   <input
                     type="text"
                     placeholder="City or Hotel Name"
-                    className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full pl-10 pr-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <FaHotel className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 </div>
@@ -38,7 +38,7 @@ const Hotels = () => {
                 <div className="relative">
                   <input
                     type="date"
-                    className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full pl-10 pr-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <FaCalendarAlt className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 </div>
@@ -49,7 +49,7 @@ const Hotels = () => {
                 <div className="relative">
                   <input
                     type="date"
-                    className="w-full pl-10 pr-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full pl-10 pr-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <FaCalendarAlt className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                 </div>
@@ -59,7 +59,7 @@ const Hotels = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Guests & Rooms</label>
                 <div className="relative">
                   <button
-                    className="w-full pl-10 pr-4 py-2 border rounded-md text-left focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="w-full pl-10 pr-4 py-2 border rounded-xl text-left focus:outline-none focus:ring-2 focus:ring-primary"
                   >
                     {guests.adults + guests.children} Guests, {rooms} Room(s)
                   </button>
@@ -68,7 +68,7 @@ const Hotels = () => {
               </div>
             </div>
 
-            <button className="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-md transition duration-300">
+            <button className="w-full border-transparent border-2 bg-accent hover:bg-transparent hover:text-accent hover:border-accent text-white font-semibold px-8 py-2 rounded-3xl transition duration-300">
               Search Hotels
             </button>
           </div>
@@ -108,7 +108,7 @@ const Hotels = () => {
             ].map((hotel, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-white rounded-2xl shadow-md overflow-hidden"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -138,7 +138,7 @@ const Hotels = () => {
                       <p className="text-2xl font-bold text-primary">${hotel.price}</p>
                       <p className="text-sm text-gray-600">per night</p>
                     </div>
-                    <button className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md transition duration-300">
+                    <button className="border-2 border-transparent bg-primary text-white hover:bg-white hover:text-primary hover:border-primary font-semibold px-4 py-2 rounded-3xl transition duration-300">
                       Book Now
                     </button>
                   </div>

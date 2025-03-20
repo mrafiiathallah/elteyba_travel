@@ -70,7 +70,7 @@ const Flights = () => {
             ].map((route, index) => (
               <motion.div
                 key={index}
-                className="bg-white rounded-lg shadow-md p-6"
+                className="bg-white rounded-2xl shadow-md p-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -88,7 +88,7 @@ const Flights = () => {
                   </div>
                   <Link 
                     to={`/flight/${route.id}`}
-                    className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md transition duration-300"
+                    className="border-2 border-transparent bg-primary text-white hover:bg-white hover:text-primary hover:border-primary font-semibold px-4 py-2 rounded-3xl transition duration-300"
                   >
                     Book Now
                   </Link>

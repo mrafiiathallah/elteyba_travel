@@ -175,7 +175,7 @@ const Testimonials = () => {
                 >
                   <a 
                     href="#"
-                    className="inline-block bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md transition duration-300"
+                    className="inline-block font-semibold rounded-2xl border-2 border-transparent bg-white text-primary hover:bg-primary hover:text-white hover:border-white px-6 py-3 transition duration-300"
                   >
                     Submit Your Testimonial
                   </a>
