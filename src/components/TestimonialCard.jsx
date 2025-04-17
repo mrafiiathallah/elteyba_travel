@@ -2,7 +2,7 @@ import { FaStar } from 'react-icons/fa';
 
 const TestimonialCard = ({ name, image, rating, testimonial, date }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
+    <div className="bg-white rounded-2xl shadow-md p-6">
       <div className="flex items-center mb-4">
         <img 
           src={image} 

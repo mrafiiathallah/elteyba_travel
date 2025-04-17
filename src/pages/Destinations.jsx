@@ -107,7 +107,7 @@ const Destinations = () => {
                   <img 
                     src={destination.image} 
                     alt={destination.name} 
-                    className="w-full h-80 object-cover rounded-lg shadow-md"
+                    className="w-full h-80 object-cover rounded-3xl shadow-md"
                   />
                 </div>
                 <div className="lg:w-1/2">
@@ -160,7 +160,7 @@ const Destinations = () => {
             >
               <a 
                 href="/packages" 
-                className="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-medium transition duration-300"
+                className="inline-block font-semibold rounded-2xl border-2 border-transparent bg-white text-primary hover:bg-primary hover:text-white hover:border-white px-8 py-3 transition duration-300"
               >
                 View Packages
               </a>

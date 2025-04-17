@@ -66,7 +66,7 @@ const FlightDetails = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2">
                             <motion.div
-                                className="bg-white rounded-lg shadow-md p-6 mb-8"
+                                className="bg-white rounded-2xl shadow-md p-6 mb-8"
                                 initial={{opacity: 0, y: 20}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 0.5}}>
@@ -166,7 +166,7 @@ const FlightDetails = () => {
                             </motion.div>
 
                             <motion.div
-                                className="bg-white rounded-lg shadow-md p-6"
+                                className="bg-white rounded-2xl shadow-md p-6"
                                 initial={{opacity: 0, y: 20}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 0.5, delay: 0.2}}>
@@ -211,7 +211,7 @@ const FlightDetails = () => {
                             initial={{opacity: 0, x: 20}}
                             animate={{opacity: 1, x: 0}}
                             transition={{duration: 0.5}}>
-                            <div className="bg-white rounded-lg shadow-md p-6 sticky top-24">
+                            <div className="bg-white rounded-2xl shadow-md p-6 sticky top-24">
                                 <h2 className="text-xl font-semibold mb-4">
                                     Price Summary
                                 </h2>
@@ -232,7 +232,7 @@ const FlightDetails = () => {
 
                                 <Link
                                     to={`/flight-booking/${flight.id}`}
-                                    className="w-full bg-accent hover:bg-accent/90 text-white py-3 rounded-md transition duration-300 mb-4 block text-center">
+                                    className="w-full border-transparent border-2 bg-accent hover:text-accent hover:border-accent text-white hover:bg-transparent font-semibold py-3 rounded-3xl transition duration-300 mb-4 block text-center">
                                     Book Now
                                 </Link>
 

@@ -117,7 +117,7 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="bg-white rounded-lg shadow-md p-8">
+              <div className="bg-white rounded-2xl shadow-md p-8">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
                 
                 {isSubmitted && (
@@ -135,7 +135,7 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                         required
                       />
                     </div>
@@ -146,7 +146,7 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                         required
                       />
                     </div>
@@ -160,7 +160,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                       />
                     </div>
                     <div>
@@ -170,7 +170,7 @@ const Contact = () => {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                        className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                         required
                       />
                     </div>
@@ -183,14 +183,14 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       rows="5"
-                      className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="w-full px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
                       required
                     ></textarea>
                   </div>
                   
                   <button
                     type="submit"
-                    className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-md transition duration-300"
+                    className="w-full border-2 border-transparent bg-primary text-white hover:bg-white hover:text-primary hover:border-primary font-semibold px-8 py-3 rounded-3xl transition duration-300"
                   >
                     Send Message
                   </button>
@@ -271,13 +271,13 @@ const Contact = () => {
             >
               <a 
                 href="tel:+12345678901" 
-                className="inline-flex items-center justify-center bg-white text-primary hover:bg-gray-100 px-6 py-3 rounded-md transition duration-300"
+                className="inline-flex items-center justify-center font-semibold rounded-2xl border-2 border-transparent bg-white text-primary hover:bg-primary hover:text-white hover:border-white px-6 py-3 transition duration-300"
               >
                 <FaPhone className="mr-2" /> Call Us
               </a>
               <a 
                 href="mailto:info@hajjumrah.com" 
-                className="inline-flex items-center justify-center bg-transparent border border-white hover:bg-white/10 text-white px-6 py-3 rounded-md transition duration-300"
+                className="inline-flex items-center justify-center font-semibold rounded-2xl border-2 border-transparent bg-transparent border-white hover:bg-white hover:text-primary text-white px-6 py-3 transition duration-300"
               >
                 <FaEnvelope className="mr-2" /> Email Us
               </a>
